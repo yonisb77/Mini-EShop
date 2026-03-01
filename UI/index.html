@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaTech | Start</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><i data-lucide="rocket" style="color: var(--primary-color);"></i> NOVATECH</div>
+            <ul class="nav-links">
+                <li><a href="index.html" style="color: var(--primary-color);"><i data-lucide="home"></i> Start</a></li>
+                <li><a href="products.html"><i data-lucide="shopping-bag"></i> Butik</a></li>
+                <li><a href="page2.html"><i data-lucide="shopping-cart"></i> Kassa (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <span class="badge badge-new" style="margin-bottom: 1rem;">Nyhet: VR Ultimate</span>
+            <h1>Framtidens Teknik</h1>
+            <p>Upplev prestanda och design i världsklass. Vi har prylarna som tar ditt setup till nästa nivå.</p>
+            <div style="margin-top: 2rem;">
+                <a href="products.html" class="btn btn-primary" style="text-decoration: none; display: inline-block; width: auto; padding: 1rem 2rem;">Utforska Butiken</a>
+            </div>
+        </section>
+        <section class="product-grid" style="margin-top: 3rem;">
+            <article class="card">
+                <div class="card-content">
+                    <span class="badge badge-new">Nyhet 🔥</span>
+                    <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=600&q=80" alt="VR">
+                    <h3>Vision VR Ultimate</h3>
+                    <p>Kliv in i framtiden. 8K-upplösning.</p>
+                    <span class="price">34999 kr</span>
+                    <button class="btn btn-primary btn-buy" data-name="Vision VR Ultimate" data-price="34999">Lägg i varukorg</button>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-content">
+                    <span class="badge badge-sale">-20% REA</span>
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80" alt="Hörlurar">
+                    <h3>Noise Cancel Headset</h3>
+                    <p>Trådlösa lurar med 30h batteritid.</p>
+                    <span class="price" style="color:#ef4444;">899 kr</span>
+                    <button class="btn btn-primary btn-buy" data-name="Noise Cancel Headset" data-price="899">Lägg i varukorg</button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 NovaTech | <a href="components.html" style="color: var(--text-color); opacity: 0.5; text-decoration: none;">Styleguide</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

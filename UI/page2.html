@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kassa | NovaTech</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><i data-lucide="rocket" style="color: var(--primary-color);"></i> NOVATECH</div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i data-lucide="home"></i> Start</a></li>
+                <li><a href="products.html"><i data-lucide="shopping-bag"></i> Butik</a></li>
+                <li><a href="page2.html" style="color: var(--primary-color);"><i data-lucide="shopping-cart"></i> Kassa (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="checkout-main">
+        <h1 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem;">Säker Kassa</h1>
+
+        <div class="checkout-wrapper">
+            <div class="checkout-form-container glass-panel">
+                <h2 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px;">
+                    <i data-lucide="truck"></i> Leveransuppgifter
+                </h2>
+                <form id="checkout-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Förnamn & Efternamn</label>
+                            <input type="text" id="name" required placeholder="T.ex. Anna Andersson">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-postadress</label>
+                            <input type="email" id="email" required placeholder="anna@mail.se">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Gatuadress</label>
+                        <input type="text" id="address" required placeholder="Storgatan 1">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="zip">Postnummer</label>
+                            <input type="text" id="zip" required pattern="[0-9]{5}" title="Ange 5 siffror" placeholder="12345">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">Ort</label>
+                            <input type="text" id="city" required placeholder="Stockholm">
+                        </div>
+                    </div>
+
+                    <h3 style="margin: 2rem 0 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem;">Fraktsätt</h3>
+                    <div class="form-group">
+                        <select id="delivery" required>
+                            <option value="Standard">Standardleverans (0 kr) - 3-5 arbetsdagar</option>
+                            <option value="Express">Expressleverans (99 kr) - Framme imorgon</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+
+            <div class="checkout-summary glass-panel">
+                <h2 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px;">
+                    <i data-lucide="shopping-bag"></i> Din Beställning
+                </h2>
+
+                <div id="cart-items-list" class="cart-items-container">
+                </div>
+
+                <div class="summary-totals">
+                    <div class="summary-row">
+                        <span>Delsumma</span>
+                        <span id="cart-subtotal">0 kr</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Frakt</span>
+                        <span id="cart-shipping">0 kr</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Att betala</span>
+                        <span id="cart-total-price" style="color: var(--success-color);">0 kr</span>
+                    </div>
+                </div>
+
+                <button type="submit" form="checkout-form" class="btn btn-primary btn-block" style="margin-top: 2rem; padding: 1.2rem; font-size: 1.1rem;">
+                    <i data-lucide="lock"></i> Slutför säkert köp
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NovaTech | Säker E-handel</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

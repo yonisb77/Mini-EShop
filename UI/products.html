@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Butik | NovaTech</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><i data-lucide="rocket" style="color: var(--primary-color);"></i> NOVATECH</div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i data-lucide="home"></i> Start</a></li>
+                <li><a href="products.html" style="color: var(--primary-color);"><i data-lucide="shopping-bag"></i> Butik</a></li>
+                <li><a href="page2.html"><i data-lucide="shopping-cart"></i> Kassa (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 style="text-align: center; margin-bottom: 3rem;">Våra Favoriter</h1>
+        <section class="product-grid">
+            <article class="card">
+                <div class="card-content">
+                    <span class="badge badge-new">Nyhet</span>
+                    <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=600&q=80" alt="VR">
+                    <h3>Vision VR Ultimate</h3>
+                    <p>Kliv in i framtiden. 8K-upplösning.</p>
+                    <span class="price">34999 kr</span>
+                    <button class="btn btn-primary btn-buy" data-name="Vision VR Ultimate" data-price="34999" data-img="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=200">Lägg i varukorg</button>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-content">
+                    <span class="badge badge-sale">REA</span>
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80" alt="Hörlurar">
+                    <h3>Noise Cancel Headset</h3>
+                    <p>Trådlösa lurar med 30h batteritid.</p>
+                    <span class="price" style="color:#ef4444;">899 kr</span>
+                    <button class="btn btn-primary btn-buy" data-name="Noise Cancel Headset" data-price="899" data-img="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=200">Lägg i varukorg</button>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-content">
+                    <span class="badge" style="background: #0ea5e9;">Pro</span>
+                    <img src="https://images.unsplash.com/photo-1579829366248-204fe8413f31?w=600&q=80" alt="Drone">
+                    <h3>SkyRider Pro Drone</h3>
+                    <p>6K-kamera och 45 min flygtid.</p>
+                    <span class="price">24999 kr</span>
+                    <button class="btn btn-primary btn-buy" data-name="SkyRider Pro Drone" data-price="24999" data-img="https://images.unsplash.com/photo-1579829366248-204fe8413f31?w=200">Lägg i varukorg</button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 NovaTech</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

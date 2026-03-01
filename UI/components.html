@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designsystem | NovaTech</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .component-section {
+            background: rgba(30, 41, 59, 0.4);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .color-grid {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .color-box {
+            width: 100px;
+            height: 60px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><i data-lucide="rocket" style="color: var(--primary-color);"></i> NOVATECH</div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i data-lucide="home"></i> Start</a></li>
+                <li><a href="page2.html"><i data-lucide="shopping-cart"></i> Kassa</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 style="margin-bottom: 2rem;">Design System</h1>
+        <section class="component-section">
+            <h2>Färgpalett</h2>
+            <div class="color-grid">
+                <div class="color-box" style="background: #6366f1;">Primary</div>
+                <div class="color-box" style="background: #34d399; color: #000;">Success</div>
+                <div class="color-box" style="background: #ef4444;">Alert</div>
+                <div class="color-box" style="background: #1e293b; border: 1px solid rgba(255,255,255,0.1);">Card BG</div>
+            </div>
+        </section>
+        <section class="component-section">
+            <h2>Typografi</h2>
+            <h1>H1 Rubrik</h1>
+            <h2>H2 Rubrik</h2>
+            <p>Brödtext för beskrivningar och information.</p>
+        </section>
+        <section class="component-section">
+            <h2>Knappar & UI</h2>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <button class="btn btn-primary" style="width: auto;">Primär knapp</button>
+                <span class="badge badge-new">Nyhet</span>
+                <span class="badge badge-sale">REA</span>
+                <div class="loader"></div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
